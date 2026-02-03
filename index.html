@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul-Nicolae Nicoară | Embedded Engineer Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">&lt;PaulNN /&gt;</div>
+
+    <ul class="nav-links">
+        <li><a href="#about" onclick="toggleMenu()">_hello</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">_skills</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">_experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">_projects</a></li>
+        <li><a href="#hobbies" onclick="toggleMenu()">_passions</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">_contact</a></li>
+    </ul>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+</nav>
+
+<section id="about" class="hero hidden">
+    <div class="hero-content">
+        <p class="mono-text">Hi, my name is</p>
+        <h1>Paul-Nicolae Nicoară</h1>
+
+        <h2 class="subtitle">
+            <span class="typewriter-text"></span><span class="cursor">|</span>
+        </h2>
+
+        <p class="bio">
+            Embedded Systems Engineering Student driven by curiosity.
+            I specialize in bridging the gap between hardware and software,
+            from <strong>FPGA design</strong> to <strong>MicroPython applications</strong>.
+            Currently studying at TUCN & recently returned from Erasmus+ at VUT Brno.
+        </p>
+        <div class="cta-buttons">
+            <a href="#projects" class="btn primary">Check my work</a>
+            <a href="CV_Paul_Nicoara.pdf" target="_blank" class="btn secondary" download>
+                Download CV <i class="fas fa-download"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="container hidden">
+    <h2 class="section-title">01. Technical Arsenal</h2>
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <h3><i class="fas fa-microchip"></i> Hardware Design</h3>
+            <div class="skill-bar-container">
+                <div class="skill-box">
+                    <div class="skill-info"><span>FPGA & VHDL (Artix-7)</span><span>Intermediate</span></div>
+                    <div class="progress-line" data-width="50%"><span></span></div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-info"><span>Circuit Simulation (LTspice/OrCAD)</span><span>Intermediate</span></div>
+                    <div class="progress-line" data-width="50%"><span></span></div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-info"><span>PCB Design</span><span>Beginner</span></div>
+                    <div class="progress-line" data-width="25%"><span></span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <h3><i class="fas fa-code"></i> Programming</h3>
+            <div class="skill-bar-container">
+                <div class="skill-box">
+                    <div class="skill-info"><span>C/C++</span><span>Intermediate</span></div>
+                    <div class="progress-line" data-width="50%"><span></span></div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-info"><span>Java</span><span>Intermediate</span></div>
+                    <div class="progress-line" data-width="50%"><span></span></div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-info"><span>Python & MicroPython</span><span>Intermediate</span></div>
+                    <div class="progress-line" data-width="50%"><span></span></div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-info"><span>MATLAB</span><span>Intermediate</span></div>
+                    <div class="progress-line" data-width="50%"><span></span></div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-info"><span>Git, Linux & CLI</span><span>Beginner</span></div>
+                    <div class="progress-line" data-width="25%"><span></span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <h3><i class="fas fa-users"></i> Leadership & Soft Skills</h3>
+            <div class="skill-bar-container">
+                <div class="skill-box">
+                    <div class="skill-info"><span>Problem Solving & Critical Thinking</span><span>Advanced</span></div>
+                    <div class="progress-line" data-width="75%"><span></span></div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-info"><span>Teamwork & Collaboration</span><span>Advanced</span></div>
+                    <div class="progress-line" data-width="75%"><span></span></div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-info"><span>Adaptability & Flexibility</span><span>Advanced</span></div>
+                    <div class="progress-line" data-width="75%"><span></span></div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-info"><span>Time Management</span><span>Intermediate</span></div>
+                    <div class="progress-line" data-width="50%"><span></span></div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-info"><span>English (Technical)</span><span>Advanced</span></div>
+                    <div class="progress-line" data-width="75%"><span></span></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="experience" class="container">
+    <h2 class="section-title hidden">02. Experience & Education</h2>
+    <div class="timeline">
+
+        <div class="timeline-item hidden">
+            <div class="timeline-date">2026 - Present</div>
+            <div class="timeline-content">
+                <h3>Volunteer</h3>
+                <h4>Google Developer Group on Campus (GDGoC) TUCN</h4>
+                <p>
+                    Actively contributing to the tech community by organizing large-scale workshops, hackathons, and tech talks.
+                    I bridge the gap between hardware engineering and modern software technologies, facilitating events that empower students to learn Google technologies.
+                    My role involves logistical planning, speaker coordination, and fostering a collaborative learning environment for aspiring developers.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item hidden">
+            <div class="timeline-date">2025 - 2026</div>
+            <div class="timeline-content">
+                <h3>Erasmus+ Study Mobility</h3>
+                <h4>Brno University of Technology (VUT), Czech Republic</h4>
+                <p>
+                    Completed an intensive study mobility focused on <strong>Applied Electronics</strong> and Embedded Systems.
+                    I successfully integrated into a diverse academic environment, collaborating within multinational teams on complex laboratory projects involving signal processing and digital circuit design.
+                    This experience enhanced my adaptability, technical English proficiency, and cross-cultural communication skills.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item hidden">
+            <div class="timeline-date">Summer 2025</div>
+            <div class="timeline-content">
+                <h3>Participant</h3>
+                <h4>IEEE Summer School on Antennas, Propagation, and RFID Applications</h4>
+                <p>
+                    Engaged in specialized training on advanced electromagnetic theory, antenna design, and wave propagation.
+                    Gained insights into 4G/5G technologies and RFID applications through hands-on workshops and lectures delivered by international experts in the field.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item hidden">
+            <div class="timeline-date">Summer 2025</div>
+            <div class="timeline-content">
+                <h3>Volunteer Guide & Mentor</h3>
+                <h4>Summer Internship Program for Turkmen Students</h4>
+                <p>
+                    Served as a key point of contact and mentor for international students from Turkmenistan.
+                    I provided guidance on navigating the academic environment, organized cultural exchange activities, and offered continuous encouragement to ensure their successful integration and positive experience in Romania.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item hidden">
+            <div class="timeline-date">2024 - 2025</div>
+            <div class="timeline-content">
+                <h3>Student Representative</h3>
+                <h4>Faculty Council (ETTI)</h4>
+                <p>
+                    Elected to represent the interests of over 1000 students in the Faculty Council.
+                    I actively participated in decision-making processes regarding curriculum improvements and administrative policies.
+                    My mandate focused on advocating for better student support systems, transparency, and modernizing the educational infrastructure.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item hidden">
+            <div class="timeline-date">Summer 2024</div>
+            <div class="timeline-content">
+                <h3>Winner & Participant</h3>
+                <h4>Ethereum Summer School Cluj + Hackathon</h4>
+                <p>
+                    Participated in an intensive bootcamp focused on Blockchain technology, Smart Contracts (Solidity), and Decentralized Applications (dApps).
+                    The program culminated in a competitive <strong>Hackathon</strong>, where my team and I secured <strong>1st Place</strong> by developing an innovative Web3 solution, demonstrating rapid prototyping and problem-solving skills under pressure.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item hidden">
+            <div class="timeline-date">2024</div>
+            <div class="timeline-content">
+                <h3>Contestant</h3>
+                <h4>Cloudflight Coding Contest</h4>
+                <p>
+                    Competed in one of Europe's largest on-site coding competitions, tackling algorithmic challenges against time constraints.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item hidden">
+            <div class="timeline-date">2023 - Present</div>
+            <div class="timeline-content">
+                <h3>Volunteer </h3>
+                <h4>OSUT Cluj-Napoca</h4>
+                <p>
+                    Providing critical technical support for the organization's large-scale events.
+                    My responsibilities include setting up IT infrastructure, managing audio-visual equipment, and implementing digital solutions to streamline internal organizational processes.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item hidden">
+            <div class="timeline-date">2023 - Present</div>
+            <div class="timeline-content">
+                <h3>Bachelor's in Engineering</h3>
+                <h4>Technical University of Cluj-Napoca (TUCN)</h4>
+                <p>
+                    Enrolled in the <strong>Faculty of Electronics, Telecommunications and Information Technology</strong>.
+                    Building a strong foundation in analog and digital electronics, programming, and system design.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item hidden">
+            <div class="timeline-date">2023 - Present</div>
+            <div class="timeline-content">
+                <h3>Psycho-pedagogical Training Programme (Level I)</h3>
+                <h4>Department for Teacher Preparation (DSPP)</h4>
+                <p>
+                    Pursuing parallel certification in education. Gaining skills in classroom management, educational psychology, and didactic methodology to effectively teach technical subjects.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item hidden">
+            <div class="timeline-date">2019 - 2023</div>
+            <div class="timeline-content">
+                <h3>High School Diploma</h3>
+                <h4>"Octavian Goga" Theoretical High School, Huedin</h4>
+                <p>
+                    Specialization: <strong>Biochemistry</strong>.
+                    Graduated with a Baccalaureate average of <strong>9.10</strong>, developing a disciplined approach to study and scientific fundamentals.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="projects" class="container">
+    <h2 class="section-title hidden">03. Project Archive</h2>
+
+    <div class="carousel-container hidden">
+
+        <button class="nav-btn prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+
+        <div class="carousel-track">
+
+            <div class="project-slide active">
+                <div class="slide-content-wrapper">
+                    <div class="slide-text">
+                        <div class="card-header">
+                            <i class="fas fa-broadcast-tower project-icon"></i>
+                        </div>
+                        <h3>Digital FM Radio Receiver</h3>
+                        <p>A digitally controlled radio system built on <strong>ESP32</strong> and <strong>MicroPython</strong>. Integrates an Si4703 tuner, OLED display, and rotary encoder. Features real-time <strong>RDS decoding</strong> and low-level I2C/SPI communication.</p>
+
+                        <a href="https://github.com/PaulNicoara252/FM-radio-receiver-with-digital-tuning" target="_blank" class="git-btn">
+                            Github <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="slide-image">
+                        <img src="https://images.unsplash.com/photo-1588147253724-c13f9907f9c2?q=80&w=2070&auto=format&fit=crop" alt="Radio Electronics">
+                        <ul class="tech-stack-overlay">
+                            <li>ESP32</li>
+                            <li>MicroPython</li>
+                            <li>Embedded</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-slide">
+                <div class="slide-content-wrapper">
+                    <div class="slide-text">
+                        <div class="card-header">
+                            <i class="fas fa-microchip project-icon"></i>
+                        </div>
+                        <h3>FPGA Cassette Controller</h3>
+                        <p>Digital controller for cassette deck mechanics implemented on <strong>Artix-7 FPGA</strong>. Uses a complex <strong>Finite State Machine (FSM)</strong> in VHDL to manage playback logic, ensuring stable transitions and hardware reliability.</p>
+
+                        <a href="https://github.com/PaulNicoara252/Cassette-Player-Controller" target="_blank" class="git-btn">
+                            Github <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="slide-image">
+                        <img src="https://images.unsplash.com/photo-1553406830-ef2513450d76?q=80&w=2070&auto=format&fit=crop" alt="FPGA Board">
+                        <ul class="tech-stack-overlay">
+                            <li>VHDL</li>
+                            <li>Vivado</li>
+                            <li>FPGA Artix-7</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-slide">
+                <div class="slide-content-wrapper">
+                    <div class="slide-text">
+                        <div class="card-header">
+                            <i class="fas fa-wave-square project-icon"></i>
+                        </div>
+                        <h3>RC Low-Pass Filter Tool</h3>
+                        <p>Comprehensive <strong>MATLAB</strong> simulation tool for RC filters. Generates automated <strong>Bode plots</strong> and analyzes time-domain responses (step, sine), serving as a computational aid for analog circuit design.</p>
+
+                        <a href="https://github.com/PaulNicoara252/Low-Pass-RC-Filter" target="_blank" class="git-btn">
+                            Github <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="slide-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop" alt="Data Analysis">
+                        <ul class="tech-stack-overlay">
+                            <li>MATLAB</li>
+                            <li>Signal Processing</li>
+                            <li>Math</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-slide">
+                <div class="slide-content-wrapper">
+                    <div class="slide-text">
+                        <div class="card-header">
+                            <i class="fas fa-shield-alt project-icon"></i>
+                        </div>
+                        <h3>Automated Security Auditor</h3>
+                        <p>Dependency auditor that parses Python code using <strong>AST (Abstract Syntax Tree)</strong>. Detects imported libraries and scans them for known vulnerabilities (CVEs), eliminating false positives found by simple text scanners.</p>
+
+                        <a href="https://github.com/PaulNicoara252/Python-Project-Globant" target="_blank" class="git-btn">
+                            Github <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="slide-image">
+                        <img src="https://images.unsplash.com/photo-1563206767-5b1d972d9fb7?q=80&w=1974&auto=format&fit=crop" alt="Cyber Security">
+                        <ul class="tech-stack-overlay">
+                            <li>Python</li>
+                            <li>Cybersecurity</li>
+                            <li>AST Module</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-slide">
+                <div class="slide-content-wrapper">
+                    <div class="slide-text">
+                        <div class="card-header">
+                            <i class="fas fa-gamepad project-icon"></i>
+                        </div>
+                        <h3>Flappy Bird Recreation</h3>
+                        <p>Performance-critical game built entirely in <strong>C++</strong>. Implements a custom physics engine and collision detection system, showcasing advanced <strong>Object-Oriented Programming (OOP)</strong> patterns in real-time rendering.</p>
+
+                        <a href="https://github.com/PaulNicoara252/Flappy-bird-personal-project" target="_blank" class="git-btn">
+                            Github <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="slide-image">
+                        <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?q=80&w=2070&auto=format&fit=crop" alt="Gaming Code">
+                        <ul class="tech-stack-overlay">
+                            <li>C++</li>
+                            <li>Game Dev</li>
+                            <li>OOP</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-slide">
+                <div class="slide-content-wrapper">
+                    <div class="slide-text">
+                        <div class="card-header">
+                            <i class="fas fa-globe-europe project-icon"></i>
+                        </div>
+                        <h3>Discover Cluj-Napoca</h3>
+                        <p><strong>Erasmus+ Course Project.</strong> A responsive, immersive web presentation showcasing the city. Built from scratch using <strong>Vanilla JavaScript</strong> and CSS (no frameworks), demonstrating core frontend skills.</p>
+
+                        <a href="https://github.com/PaulNicoara252/ITWe_Cluj-Napoca_City_Presentation" target="_blank" class="git-btn">
+                            Github <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="slide-image">
+                        <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=2144&auto=format&fit=crop" alt="City Lights">
+                        <ul class="tech-stack-overlay">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-slide">
+                <div class="slide-content-wrapper">
+                    <div class="slide-text">
+                        <div class="card-header">
+                            <i class="fas fa-bolt project-icon"></i>
+                        </div>
+                        <h3>PWM Signal Generator</h3>
+                        <p>Hardware design and simulation of a PWM Generator. Engineered in <strong>OrCAD</strong> and verified via <strong>PSpice</strong>, this circuit delivers stable, variable duty-cycle outputs essential for motor control applications.</p>
+
+                        <a href="https://github.com/PaulNicoara252/PWM-signal-generator" target="_blank" class="git-btn">
+                            Github <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="slide-image">
+                        <img src="https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?q=80&w=2070&auto=format&fit=crop" alt="Schematic Design">
+                        <ul class="tech-stack-overlay">
+                            <li>OrCAD</li>
+                            <li>PSpice</li>
+                            <li>Analog Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="nav-btn next-btn" onclick="moveSlide(1)">&#10095;</button>
+
+    </div>
+
+    <div class="dots-container">
+        <span class="dot active-dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+</section>
+
+<section id="hobbies" class="container hidden">
+    <h2 class="section-title">04. Beyond the Code</h2>
+
+    <div class="lifestyle-container">
+
+        <div class="hobby-nav">
+            <button class="hobby-btn active" onclick="changeHobby(0)">
+                <i class="fas fa-tools"></i> Engineering & Craft
+            </button>
+
+            <button class="hobby-btn" onclick="changeHobby(1)">
+                <i class="fas fa-palette"></i> Art & Creativity
+            </button>
+
+            <button class="hobby-btn" onclick="changeHobby(2)">
+                <i class="fas fa-hiking"></i> Active Lifestyle
+            </button>
+
+            <button class="hobby-btn" onclick="changeHobby(3)">
+                <i class="fas fa-book-open"></i> Mind & Culture
+            </button>
+        </div>
+
+        <div class="hobby-display" id="hobby-content">
+
+            <div class="hobby-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1631541909061-71e349d1f203?q=80&w=2000&auto=format&fit=crop" id="hobby-img" alt="Hobby Image">
+            </div>
+
+            <div class="hobby-text-content">
+                <h3 id="hobby-title">The Maker: 3D & Woodworking</h3>
+                <p id="hobby-desc">
+                    I love bringing ideas into the physical world. Whether it's <strong>3D Modelling</strong> functional parts or practicing <strong>Woodworking</strong>, I enjoy the precision and patience required to build things with my hands. It complements my engineering mindset perfectly—turning abstract concepts into tangible reality.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="container hidden">
+    <h2 class="section-title">05. What's Next?</h2>
+
+    <div class="contact-wrapper">
+        <h1 class="big-title">Get In Touch</h1>
+        <p class="contact-desc">
+            I am currently looking for internship opportunities in Embedded Systems.
+            Whether you have a technical question, a project proposal, or just want to connect, feel free to reach out!
+        </p>
+
+        <div class="contact-grid-main">
+            <a href="mailto:nicoarapaulnicolae@gmail.com" class="contact-card email-card">
+                <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                <h3>Email Me</h3>
+                <span>nicoarapaulnicolae@gmail.com</span>
+            </a>
+
+            <a href="tel:+40700000000" class="contact-card phone-card">
+                <div class="icon-box"><i class="fas fa-phone-alt"></i></div>
+                <h3>Call Me</h3>
+                <span>+40 799 856 742</span>
+            </a>
+        </div>
+
+        <p class="social-text">Or find me on social platforms:</p>
+
+        <div class="social-grid">
+            <a href="https://linkedin.com/in/paul-nicolae-nicoara" target="_blank" class="social-card linkedin">
+                <i class="fab fa-linkedin-in"></i>
+                <span>LinkedIn</span>
+            </a>
+
+            <a href="https://github.com/PaulNicoara252" target="_blank" class="social-card github">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+
+            <a href="#" target="_blank" class="social-card instagram">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+
+            <a href="#" target="_blank" class="social-card facebook">
+                <i class="fab fa-facebook-f"></i>
+                <span>Facebook</span>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Designed & Built by Paul-Nicolae Nicoară.</p>
+    </footer>
+</section>
+
+<button id="scrollTopBtn" onclick="scrollToTop()">
+    <i class="fas fa-arrow-up"></i> Back to Top
+</button>
+
+<script src="index.js"></script>
+
+</body>
+</html>
